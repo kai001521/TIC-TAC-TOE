@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light">
+  <h1>Tic Tac Toe</h1>
+
+  <div id="theme-toggle-container">
+    <button id="theme-toggle">🌙</button>
+  </div>
+
+  <div id="menu">
+    <h2>Select Board Size:</h2>
+    <button class="menu-button" onclick="startGame(3)">3x3</button>
+    <button class="menu-button" onclick="startGame(5)">5x5</button>
+    <button class="menu-button" onclick="startGame(7)">7x7</button>
+  </div>
+
+  <div id="scoreboard">
+    <p>Player X: <span id="score-x">0</span></p>
+    <p>Player O: <span id="score-o">0</span></p>
+  </div>
+
+  <div id="game-board"></div>
+  <div id="status"></div>
+
+  <button id="back-button">Back to Menu</button>
+  <button id="reset-scores">Reset Scores</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
